@@ -1,9 +1,18 @@
 #container-box {
-    background-color: black;
+    margin-top: 50px;
     font-size: 2vh;
-    color: cornsilk;
     text-align: center;
 }
 .cat-poster {
     width: 10rem;
+}
+
+#text{
+    font-size: 30px;
+}
+
+#outputlist{
+    margin-top: 80px;
+    margin-left: 20%;
+    font-size: 30px;
 }
