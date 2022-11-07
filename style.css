@@ -11,8 +11,18 @@
     font-size: 30px;
 }
 
+.clearoutput{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
 #outputlist{
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: 20%;
     font-size: 30px;
+    border: solid 3px black;
+    padding-bottom: 500px;
+    max-width: 60%;
 }
+

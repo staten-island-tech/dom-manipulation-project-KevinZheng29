@@ -59,4 +59,5 @@ const DOMSelectors = {
 DOMSelectors.button.addEventListener("click", function () {
   let input = DOMSelectors.input.value;
   DOMSelectors.output.insertAdjacentHTML("beforeEnd", `<p>${input}</p>`);
+  DOMSelectors.input.value = "";
 });
