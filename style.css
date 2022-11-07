@@ -1,28 +1,15 @@
-#container-box {
-    margin-top: 50px;
-    font-size: 2vh;
-    text-align: center;
-}
-.cat-poster {
-    width: 10rem;
-}
-
-#text{
+.textbox, .textbox1{
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-.clearoutput{
-    font-size: 30px;
-    margin-left: 20%;
-    margin-top: 3%;
-}
-
-#outputlist{
+.btn{
+    font-size: 20px;
     margin-top: 20px;
-    margin-left: 20%;
-    font-size: 30px;
-    border: solid 3px black;
-    padding-bottom: 500px;
-    max-width: 60%;
 }
-
+#Result{
+    font-size: 30px;
+    margin-top: 30px;
+}

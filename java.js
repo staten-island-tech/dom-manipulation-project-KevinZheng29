@@ -39,7 +39,7 @@ function changeLi() {
     });
   });
 }
-changeLi(); */
+changeLi(); 
 
 const DOMSelectors = {
   button: document.getElementById("btn"),
@@ -56,8 +56,21 @@ const DOMSelectors = {
   DOMSelectors.input.value = "";
 }); */
 
-DOMSelectors.button.addEventListener("click", function () {
-  let input = DOMSelectors.input.value;
-  DOMSelectors.output.insertAdjacentHTML("beforeEnd", `<p>${input}</p>`);
-  DOMSelectors.input.value = "";
-});
+const DOMSelectors = {
+  Title: document.getElementById("Title"),
+  Artist: document.getElementById("Artist"),
+  Url: document.getElementById("url"),
+  Submit: document.getElementById("btn"),
+  Output: document.getElementById("Result"),
+};
+
+function Output(input) {
+  DOMSelectors.Output.insertAdjacentHTML(
+    "afterbegin",
+    <div class="DisplayOutput">
+      <h1>${input.Title}</h1>
+      <h1>${input.Artist}</h1>
+      <img src="${input.Url"></img>
+    </div>
+  );
+}
