@@ -1,15 +1,12 @@
-.textbox, .textbox1{
-    font-size: 30px;
+.Child {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-.btn{
-    font-size: 20px;
-    margin-top: 20px;
-}
-#Result{
+    max-width: 10%;
     font-size: 30px;
-    margin-top: 30px;
+}
+
+#btn{
+    font-size: 30px;
+    margin-top: 20px;
 }

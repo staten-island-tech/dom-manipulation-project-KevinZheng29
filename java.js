@@ -57,20 +57,19 @@ const DOMSelectors = {
 }); */
 
 const DOMSelectors = {
-  Title: document.getElementById("Title"),
-  Artist: document.getElementById("Artist"),
-  Url: document.getElementById("url"),
-  Submit: document.getElementById("btn"),
-  Output: document.getElementById("Result"),
+  button: document.getElementById("btn"),
+  title: document.getElementById("title"),
+  artist: document.getElementById("artist"),
+  url: document.getElementById("url"),
+  output: document.getElementById("output"),
 };
 
-function Output(input) {
-  DOMSelectors.Output.insertAdjacentHTML(
-    "afterbegin",
-    <div class="DisplayOutput">
-      <h1>${input.Title}</h1>
-      <h1>${input.Artist}</h1>
-      <img src="${input.Url"></img>
-    </div>
-  );
+/*DOMSelectors.button.addEventListener("click", function () {
+  let title = DOMSelectors.title.value;
+  DOMSelectors.output.insertAdjacentHTML("afterend", `<p>${title}</p>`);
+}); */
+
+function Output() {
+  let title = DOMSelectors.title.value;
+  DOMSelectors.output.insertAdjacentHTML("afterend", `<p>${title}</p>`);
 }
