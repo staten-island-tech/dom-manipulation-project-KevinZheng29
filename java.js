@@ -70,21 +70,24 @@ const DOMSelectors = {
   display: document.getElementById("display"),
 };
 
-DOMSelectors.button.addEventListener("click", function () {
-  let title = DOMSelectors.title.value;
-  let artist = DOMSelectors.artist.value;
-  let url = DOMSelectors.url.value;
-  DOMSelectors.display.insertAdjacentHTML(
-    "beforeend",
-    `
+function ShowOutput() {
+  DOMSelectors.button.addEventListener("click", function () {
+    let title = DOMSelectors.title.value;
+    let artist = DOMSelectors.artist.value;
+    let url = DOMSelectors.url.value;
+    DOMSelectors.display.insertAdjacentHTML(
+      "beforeend",
+      `
 <div class="display-card">
 <h1 class="display-album">${title}</h1>
 <h1 class="display-artist">${artist}</h1>
 <img class="display-img" src="${url}"><img>
 <button class="remove">Remove Album</button>
 </div> `
-  );
-  DOMSelectors.title.value = "";
-  DOMSelectors.artist.value = "";
-  DOMSelectors.url.value = "";
-});
+    );
+    DOMSelectors.title.value = "";
+    DOMSelectors.artist.value = "";
+    DOMSelectors.url.value = "";
+  });
+}
+ShowOutput();
