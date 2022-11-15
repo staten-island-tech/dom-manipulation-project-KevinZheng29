@@ -70,7 +70,13 @@ const DOMSelectors = {
   display: document.getElementById("display"),
 };
 
-DOMSelectors.button.addEventListener("click", function () {
+DOMSelectors.form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  output();
+  clearInput();
+});
+
+function output() {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
     `
@@ -81,7 +87,10 @@ DOMSelectors.button.addEventListener("click", function () {
 <button class="remove">Remove Album</button>
 </div> `
   );
+}
+
+function clearInput() {
   DOMSelectors.title.value = "";
   DOMSelectors.artist.value = "";
   DOMSelectors.url.value = "";
-});
+}
