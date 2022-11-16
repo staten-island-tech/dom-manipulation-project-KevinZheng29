@@ -74,6 +74,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   output();
   clearInput();
+  DOMSelectors.remove = document.querySelector(".remove");
 });
 
 function output() {
