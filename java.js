@@ -84,7 +84,7 @@ function output() {
 <h1 class="display-album">${DOMSelectors.title.value}</h1>
 <h1 class="display-artist">${DOMSelectors.artist.value}</h1>
 <img class="display-img" src="${DOMSelectors.url.value}"><img>
-<button class="remove">Remove Album</button>
+<button class="remove btn">Remove Album</button>
 </div> `
   );
 }
