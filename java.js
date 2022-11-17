@@ -75,6 +75,11 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   output();
   clearInput();
   DOMSelectors.remove = document.querySelector(".remove");
+
+  DOMSelectors.remove.addEventListener("click", function () {
+    const parent = document.getElementById("display");
+    parent.remove();
+  });
 });
 
 function output() {
