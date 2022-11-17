@@ -70,18 +70,6 @@ const DOMSelectors = {
   display: document.getElementById("display"),
 };
 
-DOMSelectors.form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  output();
-  clearInput();
-  DOMSelectors.remove = document.querySelector(".remove");
-
-  DOMSelectors.remove.addEventListener("click", function () {
-    const parent = document.getElementById("display");
-    parent.remove();
-  });
-});
-
 function output() {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
@@ -100,3 +88,15 @@ function clearInput() {
   DOMSelectors.artist.value = "";
   DOMSelectors.url.value = "";
 }
+
+DOMSelectors.form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  output();
+  clearInput();
+  DOMSelectors.remove = document.querySelector(".remove");
+
+  DOMSelectors.remove.addEventListener("click", function () {
+    const parent = document.getElementById("display");
+    parent.remove();
+  });
+});
