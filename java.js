@@ -90,9 +90,11 @@ function clearInput() {
 }
 
 function Remove() {
-  let remove = document.querySelector(".remove");
-  remove.addEventListener("click", function () {
-    DOMSelectors.display.remove();
+  let remove = document.querySelectorAll(".remove");
+  remove.forEach((element) => {
+    element.addEventListener("click", function () {
+      this.parentElement.remove();
+    });
   });
 }
 
