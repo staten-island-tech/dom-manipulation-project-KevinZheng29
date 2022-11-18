@@ -89,13 +89,16 @@ function clearInput() {
   DOMSelectors.url.value = "";
 }
 
+function Remove() {
+  let remove = document.querySelector(".remove");
+  remove.addEventListener("click", function () {
+    DOMSelectors.display.remove();
+  });
+}
+
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   output();
   clearInput();
-  DOMSelectors.remove = document.querySelector(".remove");
-
-  DOMSelectors.remove.addEventListener("click", function () {
-    DOMSelectors.display.remove();
-  });
+  Remove();
 });
